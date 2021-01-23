@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".request.view.HomeFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycleChat"
+       android:layout_margin="@dimen/marginPadding10"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+   <TextView
+       android:id="@+id/textNoData"
+       android:visibility="gone"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:text="@string/NO_DATA"
+       android:fontFamily="@font/scan_regular"
+       android:textSize="@dimen/text12"
+       android:textColor="@color/colorAccent"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+</FrameLayout>

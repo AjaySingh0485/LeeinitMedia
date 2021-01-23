@@ -1,0 +1,115 @@
+<!-- This DrawerLayout has two children at the root  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- This LinearLayout represents the contents of the screen  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/marginPadding5"
+        android:layout_above="@id/linearChat"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth120"
+            android:alpha=".70"
+            android:background="@drawable/toolbar_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth50">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/marginPadding5"
+                android:src="@drawable/ico_back" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:padding="@dimen/marginPadding10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/scan_regular"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text20" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleMessage"
+            android:padding="@dimen/marginPadding20"
+            android:layout_marginBottom="@dimen/marginPadding5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/viewHeightWidth90"
+            android:background="@drawable/rounded_border"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <!-- The ActionBar displayed at the top -->
+
+        <!-- The main content view where fragments are loaded -->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/marginPadding10"
+        android:id="@+id/linearChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/marginPadding5"
+        android:background="@drawable/rounded_corner_border"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/imageAdd"
+            android:layout_width="@dimen/viewHeightWidth40"
+            android:layout_height="@dimen/viewHeightWidth40"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/marginPadding10"
+            android:src="@drawable/ico_add"
+            android:textSize="@dimen/text15" />
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marginPadding15"
+            android:layout_marginRight="@dimen/marginPadding15"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/scan_regular"
+            android:hint="@string/C_MESSAGE"
+            android:maxLines="6"
+            android:textColor="@android:color/black"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/imageSend"
+            android:layout_width="@dimen/viewHeightWidth40"
+            android:layout_height="@dimen/viewHeightWidth40"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/marginPadding10"
+            android:src="@drawable/ico_send"
+            android:textSize="@dimen/text15" />
+
+    </LinearLayout>
+</RelativeLayout>

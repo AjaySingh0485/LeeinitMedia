@@ -1,0 +1,105 @@
+<!-- This DrawerLayout has two children at the root  -->
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg">
+
+    <!-- This LinearLayout represents the contents of the screen  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth120"
+            android:alpha=".70"
+            android:background="@drawable/toolbar_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth50">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/marginPadding5"
+                android:src="@drawable/ico_menu" />
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:padding="@dimen/marginPadding10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/scan_regular"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text20" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/frameMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/viewHeightWidth90"
+            android:background="@drawable/rounded_border"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <!-- The ActionBar displayed at the top -->
+
+        <!-- The main content view where fragments are loaded -->
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/navigationView"
+        layout="@layout/custom_navigation_layout"
+        android:layout_width="@dimen/viewHeightWidth250"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <!-- The navigation drawer that comes from the left -->
+    <!-- Note that `android:layout_gravity` needs to be set to 'start' -->
+</androidx.drawerlayout.widget.DrawerLayout><!--
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewHeightWidth120"
+        android:alpha=".70"
+        android:background="@drawable/toolbar_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/viewHeightWidth90"
+        android:background="@drawable/rounded_border">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginPadding12"
+            android:layout_marginTop="@dimen/viewHeightWidth40"
+            android:layout_marginEnd="@dimen/marginPadding12"
+            android:layout_marginBottom="@dimen/marginPadding10" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>-->

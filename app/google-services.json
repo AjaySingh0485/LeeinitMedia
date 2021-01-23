@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "442943067928",
+    "firebase_url": "https://leeinit-b84b9.firebaseio.com",
+    "project_id": "leeinit-b84b9",
+    "storage_bucket": "leeinit-b84b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442943067928:android:10903cae1a01b3811cb06d",
+        "android_client_info": {
+          "package_name": "com.ons.shopdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442943067928-0qrkj9d7as6esnrgv35qpd3ckqk6i5fj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ons.shopdm",
+            "certificate_hash": "d7cd30975a29d78525bd6d8ae038da2b8df59155"
+          }
+        },
+        {
+          "client_id": "442943067928-vf48a649v09a0a1tms7gasnml8795cte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD04tvFPLT8H2FUNwEVwIBUhn8sma1V88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442943067928-vf48a649v09a0a1tms7gasnml8795cte.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "442943067928-ac3j0nbor8qsl09pbsllrn7nipvmnntf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pelkinsoft.shopdm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442943067928:android:48b44c3800fa56cb1cb06d",
+        "android_client_info": {
+          "package_name": "com.pelkinsoft.shopdm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442943067928-b3a0qudca9dl3jqvujq3o5irr01gt2r1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pelkinsoft.shopdm",
+            "certificate_hash": "b74a61911441be2fa308b73348d8ac87669ce92e"
+          }
+        },
+        {
+          "client_id": "442943067928-vf48a649v09a0a1tms7gasnml8795cte.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD04tvFPLT8H2FUNwEVwIBUhn8sma1V88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442943067928-vf48a649v09a0a1tms7gasnml8795cte.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "442943067928-ac3j0nbor8qsl09pbsllrn7nipvmnntf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pelkinsoft.shopdm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

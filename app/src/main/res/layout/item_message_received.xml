@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/marginPadding2"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/marginPadding12"
+    android:paddingTop="@dimen/marginPadding10">
+    <TextView
+        android:id="@+id/textMessage"
+        android:fontFamily="@font/scan_regular"
+        android:text="hi man, how are you?"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:maxLines="3"
+        android:maxEms="15"
+        android:padding="@dimen/marginPadding17"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/marginPadding5"
+        android:layout_marginStart="@dimen/marginPadding7" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageMedia"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/marginPadding5"
+        android:layout_marginStart="@dimen/marginPadding7"
+        android:layout_width="@dimen/viewHeightWidth90"
+        android:layout_height="@dimen/viewHeightWidth90"
+        android:contentDescription="@string/app_name" />
+
+
+</androidx.cardview.widget.CardView>

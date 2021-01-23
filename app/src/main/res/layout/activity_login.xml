@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".register.view.LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginPadding25"
+        android:background="@color/colorAccent"
+        app:cardCornerRadius="@dimen/marginPadding8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginPadding15"
+                android:layout_marginTop="@dimen/marginPadding30"
+                android:layout_marginEnd="@dimen/marginPadding10"
+                android:backgroundTint="@android:color/black"
+                android:drawableStart="@drawable/ico_email"
+                android:drawablePadding="@dimen/marginPadding10"
+                android:fontFamily="@font/scan_regular"
+                android:hint="@string/L_EMAIL"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/marginPadding15"
+                tools:ignore="LabelFor,UnusedAttribute" />
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginPadding15"
+                android:layout_marginTop="@dimen/marginPadding30"
+                android:layout_marginEnd="@dimen/marginPadding10"
+                android:backgroundTint="@android:color/black"
+                android:drawableStart="@drawable/ico_password"
+                android:drawablePadding="@dimen/marginPadding10"
+                android:fontFamily="@font/scan_regular"
+                android:hint="@string/L_PASSWORD"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/marginPadding15"
+                tools:ignore="LabelFor,UnusedAttribute" />
+
+            <TextView
+                android:id="@+id/textSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginPadding30"
+                android:layout_marginBottom="@dimen/marginPadding20"
+                android:background="@drawable/rounded_corner_fill_border"
+                android:fontFamily="@font/scan_regular"
+                android:paddingStart="@dimen/marginPadding30"
+                android:paddingTop="@dimen/marginPadding10"
+                android:paddingEnd="@dimen/marginPadding30"
+                android:paddingBottom="@dimen/marginPadding10"
+                android:text="@string/L_SIGN_IN"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:textSize="@dimen/text20"
+        android:fontFamily="@font/scan_regular"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/marginPadding10"
+        android:layout_margin="@dimen/marginPadding20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/L_SIGN_UP"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
